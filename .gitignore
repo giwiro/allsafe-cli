@@ -90,3 +90,4 @@ dist/
 
 # Compiled
 allsafe-cli.linux-x64/
+allsafe-cli-darwin-x64/

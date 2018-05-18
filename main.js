@@ -1,3 +1,4 @@
+const path = require('path');
 const electron = require('electron');
 const app = electron.app;
 
@@ -7,12 +8,15 @@ const isDev = require('electron-is-dev');
 let mainWindow;
 
 function createWindow() {
+  console.log('icon', path.join(__dirname, './src/assets/images/icon', '128x128.png'));
   const options = {
+    title: 'Allsafe',
     width: isDev ? 1458 : 900,
     height: 680,
     minWidth: 900,
     minHeight: 680,
     show: false,
+    icon: path.join(__dirname, './src/assets/images/icon', '128x128.png'),
   };
   mainWindow = new BrowserWindow(options);
   mainWindow.webContents.on('dom-ready', () => {

@@ -56,7 +56,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "electron-dev": "ELECTRON_IS_DEV=1 concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
-    "compile": "ELECTRON_IS_DEV=0 yarn build & electron-packager . --overwrite"
+    "compile": "ELECTRON_IS_DEV=0 yarn build & electron-packager . --overwrite --icon ./src/assets/images/icon/128x128.png"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
