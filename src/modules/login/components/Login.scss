@@ -1,0 +1,37 @@
+main.loginWrap{
+  background-color: #EEE;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div.centered {
+    position: absolute;
+  }
+
+  form.loginForm {
+    padding: 25px;
+    width: 400px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.paperLogo {
+    position: absolute;
+    padding: 5px 5px 1px;
+    border-radius: 50%;
+    left: 38%;
+    margin-top: -50px;
+
+    img.logo {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+}
+
